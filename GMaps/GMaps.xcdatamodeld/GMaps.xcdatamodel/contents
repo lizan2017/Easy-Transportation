@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BusStops" representedClassName=".BusStops" syncable="YES">
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Latitude" representedClassName=".Latitude" syncable="YES">
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Longitude" representedClassName=".Longitude" syncable="YES">
+        <attribute name="lon" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Name" representedClassName=".Name" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Latitude" positionX="124" positionY="-144" width="128" height="60"/>
+        <element name="Longitude" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="Name" positionX="-29" positionY="-315" width="128" height="60"/>
+        <element name="BusStops" positionX="36" positionY="-153" width="128" height="88"/>
+    </elements>
 </model>

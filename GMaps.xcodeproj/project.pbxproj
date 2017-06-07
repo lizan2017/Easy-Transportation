@@ -7,23 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1636361EC62BE50053F08A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1636351EC62BE50053F08A /* SWRevealViewController.m */; };
+		1A180D361EC1B24100F90465 /* Longitude+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A180D321EC1B24100F90465 /* Longitude+CoreDataClass.swift */; };
+		1A180D371EC1B24100F90465 /* Longitude+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A180D331EC1B24100F90465 /* Longitude+CoreDataProperties.swift */; };
+		1A180D381EC1B24100F90465 /* Latitude+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A180D341EC1B24100F90465 /* Latitude+CoreDataClass.swift */; };
+		1A180D391EC1B24100F90465 /* Latitude+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A180D351EC1B24100F90465 /* Latitude+CoreDataProperties.swift */; };
+		1A199FAB1EE809A600CE0B70 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */; };
+		1A199FAD1EE80A8400CE0B70 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */; };
+		1A19F6631EE53958000C2A24 /* BusStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6621EE53958000C2A24 /* BusStops.swift */; };
+		1A19F6671EE53D19000C2A24 /* BusStopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6661EE53D19000C2A24 /* BusStopsViewController.swift */; };
+		1A19F66A1EE5428B000C2A24 /* BusStops+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */; };
+		1A19F66B1EE5428B000C2A24 /* BusStops+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */; };
+		1A19F66D1EE54737000C2A24 /* BusStopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */; };
+		1A1BF8BE1EE7165B007BE2E6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */; };
+		1A1BF8C01EE7166B007BE2E6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */; };
+		1A1C98251EC6D04E001459D7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */; };
+		1A1C98271EC6D28D001459D7 /* SavedLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */; };
+		1A1C98291EC6DA0E001459D7 /* SavedLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */; };
+		1A29B2FF1EC19C42008791FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A29B2FE1EC19C42008791FD /* Assets.xcassets */; };
 		1A39E1171EBF35F200B2D22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1161EBF35F200B2D22C /* AppDelegate.swift */; };
 		1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1181EBF35F200B2D22C /* ViewController.swift */; };
 		1A39E11C1EBF35F200B2D22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A39E11A1EBF35F200B2D22C /* Main.storyboard */; };
 		1A39E11F1EBF35F200B2D22C /* GMaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E11D1EBF35F200B2D22C /* GMaps.xcdatamodeld */; };
-		1A39E1211EBF35F200B2D22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A39E1201EBF35F200B2D22C /* Assets.xcassets */; };
 		1A39E1241EBF35F200B2D22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A39E1221EBF35F200B2D22C /* LaunchScreen.storyboard */; };
+		1A5BF3451EDEF8FE00053F2F /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */; };
+		1A9257E71EC4DB05002533A8 /* Name+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */; };
+		1A9257E81EC4DB05002533A8 /* Name+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9257E41EC4DB05002533A8 /* Name+CoreDataProperties.swift */; };
+		1AE4B10F1ECCA00500B9695C /* SavedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */; };
+		58F163F42202C1BB0135F841 /* Pods_GMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B995D0B759A515F75AF37 /* Pods_GMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080127E2C9D8E20AEA8E6265 /* Pods-GMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMaps/Pods-GMaps.release.xcconfig"; sourceTree = "<group>"; };
+		1A1636331EC62BE40053F08A /* GMaps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMaps-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A1636341EC62BE50053F08A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1A1636351EC62BE50053F08A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1A180D321EC1B24100F90465 /* Longitude+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Longitude+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A180D331EC1B24100F90465 /* Longitude+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Longitude+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A180D341EC1B24100F90465 /* Latitude+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Latitude+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A180D351EC1B24100F90465 /* Latitude+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Latitude+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		1A19F6621EE53958000C2A24 /* BusStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStops.swift; sourceTree = "<group>"; };
+		1A19F6661EE53D19000C2A24 /* BusStopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsViewController.swift; sourceTree = "<group>"; };
+		1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BusStops+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BusStops+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsTableViewCell.swift; sourceTree = "<group>"; };
+		1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationViewController.swift; sourceTree = "<group>"; };
+		1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationCell.swift; sourceTree = "<group>"; };
+		1A29B2FE1EC19C42008791FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A39E1131EBF35F200B2D22C /* GMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A39E1161EBF35F200B2D22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A39E1181EBF35F200B2D22C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A39E11B1EBF35F200B2D22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A39E11E1EBF35F200B2D22C /* GMaps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GMaps.xcdatamodel; sourceTree = "<group>"; };
-		1A39E1201EBF35F200B2D22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A39E1231EBF35F200B2D22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A39E1251EBF35F200B2D22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Name+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9257E41EC4DB05002533A8 /* Name+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Name+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMapViewController.swift; sourceTree = "<group>"; };
+		ACD051B63B9498E9C556F4D1 /* Pods-GMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMaps/Pods-GMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		DD9B995D0B759A515F75AF37 /* Pods_GMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +79,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F163F42202C1BB0135F841 /* Pods_GMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1636321EC62B5F0053F08A /* SWReavel */ = {
+			isa = PBXGroup;
+			children = (
+				1A1636341EC62BE50053F08A /* SWRevealViewController.h */,
+				1A1636351EC62BE50053F08A /* SWRevealViewController.m */,
+				1A1636331EC62BE40053F08A /* GMaps-Bridging-Header.h */,
+			);
+			name = SWReavel;
+			sourceTree = "<group>";
+		};
+		1A1C982A1EC6E238001459D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A39E1181EBF35F200B2D22C /* ViewController.swift */,
+				1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */,
+				1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */,
+				1A19F6661EE53D19000C2A24 /* BusStopsViewController.swift */,
+				1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */,
+				1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */,
+				1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */,
+				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1A1C982B1EC6E26B001459D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */,
+				1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */,
+				1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */,
+				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
+				1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1A1C982C1EC6E289001459D7 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */,
+				1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */,
+				1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */,
+				1A9257E41EC4DB05002533A8 /* Name+CoreDataProperties.swift */,
+				1A180D321EC1B24100F90465 /* Longitude+CoreDataClass.swift */,
+				1A19F6621EE53958000C2A24 /* BusStops.swift */,
+				1A180D331EC1B24100F90465 /* Longitude+CoreDataProperties.swift */,
+				1A180D341EC1B24100F90465 /* Latitude+CoreDataClass.swift */,
+				1A180D351EC1B24100F90465 /* Latitude+CoreDataProperties.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
 		1A39E10A1EBF35F200B2D22C = {
 			isa = PBXGroup;
 			children = (
 				1A39E1151EBF35F200B2D22C /* GMaps */,
 				1A39E1141EBF35F200B2D22C /* Products */,
+				88A5B7C86BF3B46C5ED2C69A /* Pods */,
+				F17E75FDFF1FE7D8098EA1DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +160,34 @@
 		1A39E1151EBF35F200B2D22C /* GMaps */ = {
 			isa = PBXGroup;
 			children = (
+				1A1C982A1EC6E238001459D7 /* Controllers */,
+				1A1C982C1EC6E289001459D7 /* Modals */,
+				1A1C982B1EC6E26B001459D7 /* View */,
+				1A1636321EC62B5F0053F08A /* SWReavel */,
 				1A39E1161EBF35F200B2D22C /* AppDelegate.swift */,
-				1A39E1181EBF35F200B2D22C /* ViewController.swift */,
-				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
-				1A39E1201EBF35F200B2D22C /* Assets.xcassets */,
+				1A29B2FE1EC19C42008791FD /* Assets.xcassets */,
 				1A39E1221EBF35F200B2D22C /* LaunchScreen.storyboard */,
 				1A39E1251EBF35F200B2D22C /* Info.plist */,
 				1A39E11D1EBF35F200B2D22C /* GMaps.xcdatamodeld */,
 			);
 			path = GMaps;
+			sourceTree = "<group>";
+		};
+		88A5B7C86BF3B46C5ED2C69A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACD051B63B9498E9C556F4D1 /* Pods-GMaps.debug.xcconfig */,
+				080127E2C9D8E20AEA8E6265 /* Pods-GMaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F17E75FDFF1FE7D8098EA1DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B995D0B759A515F75AF37 /* Pods_GMaps.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A39E1281EBF35F200B2D22C /* Build configuration list for PBXNativeTarget "GMaps" */;
 			buildPhases = (
+				59616B8829D9339A91C291DD /* [CP] Check Pods Manifest.lock */,
 				1A39E10F1EBF35F200B2D22C /* Sources */,
 				1A39E1101EBF35F200B2D22C /* Frameworks */,
 				1A39E1111EBF35F200B2D22C /* Resources */,
+				932B07D93F3BEB195A92C3F3 /* [CP] Embed Pods Frameworks */,
+				14AF08E9CB1D6827F01BA10A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,12 +219,18 @@
 		1A39E10B1EBF35F200B2D22C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Side,
+					"Side Menu",
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Lizan;
 				TargetAttributes = {
 					1A39E1121EBF35F200B2D22C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 34GNZSDHKK;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,13 +258,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1BF8BE1EE7165B007BE2E6 /* Login.storyboard in Resources */,
 				1A39E1241EBF35F200B2D22C /* LaunchScreen.storyboard in Resources */,
-				1A39E1211EBF35F200B2D22C /* Assets.xcassets in Resources */,
+				1A29B2FF1EC19C42008791FD /* Assets.xcassets in Resources */,
+				1A199FAB1EE809A600CE0B70 /* UserProfile.storyboard in Resources */,
 				1A39E11C1EBF35F200B2D22C /* Main.storyboard in Resources */,
+				1A1BF8C01EE7166B007BE2E6 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14AF08E9CB1D6827F01BA10A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMaps/Pods-GMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59616B8829D9339A91C291DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		932B07D93F3BEB195A92C3F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMaps/Pods-GMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A39E10F1EBF35F200B2D22C /* Sources */ = {
@@ -140,8 +323,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A39E11F1EBF35F200B2D22C /* GMaps.xcdatamodeld in Sources */,
+				1AE4B10F1ECCA00500B9695C /* SavedMapViewController.swift in Sources */,
+				1A180D391EC1B24100F90465 /* Latitude+CoreDataProperties.swift in Sources */,
+				1A9257E71EC4DB05002533A8 /* Name+CoreDataClass.swift in Sources */,
 				1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */,
+				1A1C98251EC6D04E001459D7 /* SideMenuViewController.swift in Sources */,
 				1A39E1171EBF35F200B2D22C /* AppDelegate.swift in Sources */,
+				1A19F66B1EE5428B000C2A24 /* BusStops+CoreDataProperties.swift in Sources */,
+				1A180D381EC1B24100F90465 /* Latitude+CoreDataClass.swift in Sources */,
+				1A1C98291EC6DA0E001459D7 /* SavedLocationCell.swift in Sources */,
+				1A180D371EC1B24100F90465 /* Longitude+CoreDataProperties.swift in Sources */,
+				1A1636361EC62BE50053F08A /* SWRevealViewController.m in Sources */,
+				1A19F66D1EE54737000C2A24 /* BusStopsTableViewCell.swift in Sources */,
+				1A19F6671EE53D19000C2A24 /* BusStopsViewController.swift in Sources */,
+				1A5BF3451EDEF8FE00053F2F /* SideMenuCell.swift in Sources */,
+				1A19F6631EE53958000C2A24 /* BusStops.swift in Sources */,
+				1A199FAD1EE80A8400CE0B70 /* UserProfileViewController.swift in Sources */,
+				1A19F66A1EE5428B000C2A24 /* BusStops+CoreDataClass.swift in Sources */,
+				1A1C98271EC6D28D001459D7 /* SavedLocationViewController.swift in Sources */,
+				1A180D361EC1B24100F90465 /* Longitude+CoreDataClass.swift in Sources */,
+				1A9257E81EC4DB05002533A8 /* Name+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,24 +463,35 @@
 		};
 		1A39E1291EBF35F200B2D22C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD051B63B9498E9C556F4D1 /* Pods-GMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 34GNZSDHKK;
 				INFOPLIST_FILE = GMaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GMaps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNepal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMaps/GMaps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1A39E12A1EBF35F200B2D22C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080127E2C9D8E20AEA8E6265 /* Pods-GMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 34GNZSDHKK;
 				INFOPLIST_FILE = GMaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GMaps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNepal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMaps/GMaps-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +515,7 @@
 				1A39E12A1EBF35F200B2D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
