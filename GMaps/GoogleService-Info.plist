@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>8763988587-0e10madr2mhvgr04c3csjnqf8r52po4d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.8763988587-0e10madr2mhvgr04c3csjnqf8r52po4d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAARQI3n01lk7i_REt8BYQ2hI2VeJfGO-0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>8763988587</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.GMapsNepal</string>
+	<key>PROJECT_ID</key>
+	<string>gmaps-1494156098734</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gmaps-1494156098734.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:8763988587:ios:44c13b3fa906c136</string>
+	<key>DATABASE_URL</key>
+	<string>https://gmaps-1494156098734.firebaseio.com</string>
+</dict>
+</plist>
