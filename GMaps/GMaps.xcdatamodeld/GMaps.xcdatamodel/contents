@@ -8,6 +8,9 @@
     <entity name="Latitude" representedClassName=".Latitude" syncable="YES">
         <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="LoginData" representedClassName=".LoginData" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Longitude" representedClassName=".Longitude" syncable="YES">
         <attribute name="lon" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -15,9 +18,10 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="BusStops" positionX="36" positionY="-153" width="128" height="88"/>
         <element name="Latitude" positionX="124" positionY="-144" width="128" height="60"/>
         <element name="Longitude" positionX="-54" positionY="0" width="128" height="60"/>
         <element name="Name" positionX="-29" positionY="-315" width="128" height="60"/>
-        <element name="BusStops" positionX="36" positionY="-153" width="128" height="88"/>
+        <element name="LoginData" positionX="36" positionY="-162" width="128" height="60"/>
     </elements>
 </model>

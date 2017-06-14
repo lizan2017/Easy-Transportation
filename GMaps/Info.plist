@@ -22,10 +22,12 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>use location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Login</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -100,18 +100,13 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
        
     }
     
-  
-    
     @IBAction func defaultBtnTapped(_ sender: Any) {
         googleMaps.mapType = GMSMapViewType.normal
     }
-
     
     @IBAction func satelliteTapped(_ sender: Any) {
         googleMaps.mapType = GMSMapViewType.satellite
     }
-
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -157,7 +152,6 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
             mapView.selectedMarker = nil
         }
     }
-    
     
     public func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace){
         

@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import GoogleMaps
 import GooglePlaces
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,8 +24,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyDXpYBAruPNMEWa_GDF_iOkuKPhp6uJ94g")
         GMSPlacesClient.provideAPIKey("AIzaSyCxPL3sLGcSrreEbETzkUXrMT3Cq0ywejA")
-        
+        FIRApp.configure()
+        checkSession()
         return true
+    }
+    
+    private func checkSession(){
+        
+        let context = self.persistentContainer.viewContext
+        let fetchReq = try! context.fetch(LoginData.fetchRequest())
+        if fetchReq.count != 0{
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            
+            let mainVC = sb.instantiateViewController(withIdentifier: "main")
+            window?.rootViewController = mainVC
+        }else{
+            let sb = UIStoryboard(name: "Login", bundle: nil)
+            
+            let loginVC = sb.instantiateViewController(withIdentifier: "loginVC")
+            window?.rootViewController = loginVC
+        }
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

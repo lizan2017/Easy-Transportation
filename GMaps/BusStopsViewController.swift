@@ -109,6 +109,7 @@ class BusStopsViewController: UIViewController, UITableViewDelegate, UITableView
             let resultArray = bustopDic["results"] as! Array<[String:Any]>
             for i:Int in 0 ..< resultArray.count{
                 let busDic = resultArray[i]
+                
                 let busLocation = busDic["geometry"] as! [String:Any]
                 let busCoordinate = busLocation["location"] as! [String:Any]
                 let busName = busDic["name"] as! String

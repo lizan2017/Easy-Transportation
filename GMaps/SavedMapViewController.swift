@@ -127,6 +127,43 @@ class SavedMapViewController: UIViewController, CLLocationManagerDelegate, GMSMa
         }
         
     }
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        
+        let lat = marker.position.latitude
+        let lon = marker.position.longitude
+        let name = marker.title
+        let alert = UIAlertController(title: "",message: "Save Location?", preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Save", style: .default, handler: {_ in
+            
+            if name == nil{
+                return
+            }else{
+                let appdelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appdelegate.persistentContainer.viewContext
+                let latEntity = Latitude(context: context)
+                let lonEntity = Longitude(context: context)
+                let nameEntity = Name(context: context)
+                
+                latEntity.lat = String(lat)
+                lonEntity.lon = String(lon)
+                nameEntity.name = name
+                do{
+                    try context.save()
+                    
+                }catch{
+                    
+                }}
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+        
+        
+    }
+
     
 
 }

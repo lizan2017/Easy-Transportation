@@ -19,6 +19,9 @@
 		1A19F66A1EE5428B000C2A24 /* BusStops+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */; };
 		1A19F66B1EE5428B000C2A24 /* BusStops+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */; };
 		1A19F66D1EE54737000C2A24 /* BusStopsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */; };
+		1A1A5DC01EEC1B0500592FB0 /* LoginData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A5DBE1EEC1B0500592FB0 /* LoginData+CoreDataClass.swift */; };
+		1A1A5DC11EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A5DBF1EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift */; };
+		1A1A5DC31EEC21A400592FB0 /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */; };
 		1A1BF8BE1EE7165B007BE2E6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */; };
 		1A1BF8C01EE7166B007BE2E6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */; };
 		1A1C98251EC6D04E001459D7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */; };
@@ -34,6 +37,9 @@
 		1A9257E71EC4DB05002533A8 /* Name+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */; };
 		1A9257E81EC4DB05002533A8 /* Name+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9257E41EC4DB05002533A8 /* Name+CoreDataProperties.swift */; };
 		1AE4B10F1ECCA00500B9695C /* SavedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */; };
+		1AF819EB1EEAF725001FDA7C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */; };
+		1AF819ED1EEB017C001FDA7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AF819EC1EEB017C001FDA7C /* GoogleService-Info.plist */; };
+		1AF819EF1EEB1C61001FDA7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */; };
 		58F163F42202C1BB0135F841 /* Pods_GMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9B995D0B759A515F75AF37 /* Pods_GMaps.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,9 @@
 		1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BusStops+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BusStops+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopsTableViewCell.swift; sourceTree = "<group>"; };
+		1A1A5DBE1EEC1B0500592FB0 /* LoginData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A1A5DBF1EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
 		1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +79,9 @@
 		1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Name+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1A9257E41EC4DB05002533A8 /* Name+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Name+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMapViewController.swift; sourceTree = "<group>"; };
+		1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1AF819EC1EEB017C001FDA7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACD051B63B9498E9C556F4D1 /* Pods-GMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMaps/Pods-GMaps.debug.xcconfig"; sourceTree = "<group>"; };
 		DD9B995D0B759A515F75AF37 /* Pods_GMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,7 +118,10 @@
 				1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */,
 				1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */,
 				1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */,
+				1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */,
+				1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */,
 				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
+				1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +141,8 @@
 		1A1C982C1EC6E289001459D7 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				1A1A5DBE1EEC1B0500592FB0 /* LoginData+CoreDataClass.swift */,
+				1A1A5DBF1EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift */,
 				1A9257E31EC4DB05002533A8 /* Name+CoreDataClass.swift */,
 				1A19F6681EE5428B000C2A24 /* BusStops+CoreDataClass.swift */,
 				1A19F6691EE5428B000C2A24 /* BusStops+CoreDataProperties.swift */,
@@ -168,6 +185,7 @@
 				1A29B2FE1EC19C42008791FD /* Assets.xcassets */,
 				1A39E1221EBF35F200B2D22C /* LaunchScreen.storyboard */,
 				1A39E1251EBF35F200B2D22C /* Info.plist */,
+				1AF819EC1EEB017C001FDA7C /* GoogleService-Info.plist */,
 				1A39E11D1EBF35F200B2D22C /* GMaps.xcdatamodeld */,
 			);
 			path = GMaps;
@@ -259,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1BF8BE1EE7165B007BE2E6 /* Login.storyboard in Resources */,
+				1AF819ED1EEB017C001FDA7C /* GoogleService-Info.plist in Resources */,
 				1A39E1241EBF35F200B2D22C /* LaunchScreen.storyboard in Resources */,
 				1A29B2FF1EC19C42008791FD /* Assets.xcassets in Resources */,
 				1A199FAB1EE809A600CE0B70 /* UserProfile.storyboard in Resources */,
@@ -322,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF819EB1EEAF725001FDA7C /* SignUpViewController.swift in Sources */,
 				1A39E11F1EBF35F200B2D22C /* GMaps.xcdatamodeld in Sources */,
 				1AE4B10F1ECCA00500B9695C /* SavedMapViewController.swift in Sources */,
+				1AF819EF1EEB1C61001FDA7C /* LoginViewController.swift in Sources */,
 				1A180D391EC1B24100F90465 /* Latitude+CoreDataProperties.swift in Sources */,
 				1A9257E71EC4DB05002533A8 /* Name+CoreDataClass.swift in Sources */,
 				1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */,
@@ -340,9 +361,12 @@
 				1A19F6631EE53958000C2A24 /* BusStops.swift in Sources */,
 				1A199FAD1EE80A8400CE0B70 /* UserProfileViewController.swift in Sources */,
 				1A19F66A1EE5428B000C2A24 /* BusStops+CoreDataClass.swift in Sources */,
+				1A1A5DC31EEC21A400592FB0 /* UserProfileCell.swift in Sources */,
+				1A1A5DC11EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift in Sources */,
 				1A1C98271EC6D28D001459D7 /* SavedLocationViewController.swift in Sources */,
 				1A180D361EC1B24100F90465 /* Longitude+CoreDataClass.swift in Sources */,
 				1A9257E81EC4DB05002533A8 /* Name+CoreDataProperties.swift in Sources */,
+				1A1A5DC01EEC1B0500592FB0 /* LoginData+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,17 +7,35 @@
 //
 
 import UIKit
+import Alamofire
+import GooglePlaces
+import GoogleMaps
+import Firebase
+import SDWebImage
 
-
-class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , CLLocationManagerDelegate{
 
     var dataSource = ["Map View","Saved Location", "Bus Stops","Profile", "Log Out"]
- 
+    var locationManager :CLLocationManager!
+    var currentLocation:CLLocation?
     
     @IBOutlet weak var savedLocTableview: UITableView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet weak var userImageview: UIImageView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
+        userImageview.layer.cornerRadius = 20
+        userNameLabel.textColor = UIColor.white
         
     }
 
@@ -26,6 +44,43 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         UIApplication.shared.statusBarStyle = .lightContent
         self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.getUserDataFromFirebase()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last
+        self.currentLocation = location
+        self.locationManager.stopUpdatingLocation()
+        
+        self.getWeatherData()
+    }
+    
+    
+    func getWeatherData() {
+        let url = "api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1ba68cb538a3781224d196cb3d0aa9ea"
+        Alamofire.request(url).responseJSON(completionHandler: {(response) in
+        
+          
+        
+        })
+    }
+    
+    
+    func getUserDataFromFirebase(){
+        let ref = FIRDatabase.database().reference()
+        ref.child("Users").child((FIRAuth.auth()?.currentUser?.uid)!).observe(.value, with: {
+            (snapshot) in
+            let userData = snapshot.value as! [String:Any]
+            self.userNameLabel.text = userData["Full Name"] as? String
+            let url = userData["ImageUrl"] as! String
+            let imageUrl = URL(string: url)
+//            let data = try? Data(contentsOf: imageUrl!)
+//            DispatchQueue.main.async {
+//                self.userImageview.image = UIImage(data: data!)
+//            }
+            self.userImageview.sd_setImage(with: imageUrl)
+            
+        })
     }
     
     
@@ -73,7 +128,8 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         if cell.menuItemLabel.text == "Profile"{
             let sb = UIStoryboard(name: "UserProfile", bundle: nil)
             let userProfileVC = sb.instantiateViewController(withIdentifier: "userProfile")
-            self.revealViewController().pushFrontViewController(userProfileVC, animated: true)
+            let nav = UINavigationController(rootViewController: userProfileVC)
+            self.revealViewController().pushFrontViewController(nav, animated: true)
         }
         if cell.menuItemLabel.text == "Map View"{
             self.revealViewController().bounceBackOnLeftOverdraw = true
@@ -84,6 +140,22 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
 
         
         }
+        if cell.menuItemLabel.text == "Log Out"{
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let fetchedData = try! context.fetch(LoginData.fetchRequest())
+            for i:Int in 0 ..< fetchedData.count{
+            let emailData = fetchedData[i] as! LoginData
+            context.delete(emailData)
+                
+            try? context.save()
+                
+                let sb = UIStoryboard(name: "Login", bundle: nil)
+                let loginVC = sb.instantiateViewController(withIdentifier: "loginVC")
+                self.present(loginVC, animated: true, completion: nil)
+          }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
