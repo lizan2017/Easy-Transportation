@@ -108,20 +108,117 @@
 			name = SWReavel;
 			sourceTree = "<group>";
 		};
-		1A1C982A1EC6E238001459D7 /* Controllers */ = {
+		1A17AFDE1EF25EF300FE83EB /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */,
+				1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		1A17AFDF1EF25EFF00FE83EB /* SavedLocationMap */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */,
+			);
+			name = SavedLocationMap;
+			sourceTree = "<group>";
+		};
+		1A17AFE01EF25F0E00FE83EB /* BusStops */ = {
+			isa = PBXGroup;
+			children = (
+				1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */,
+				1A19F6661EE53D19000C2A24 /* BusStopsViewController.swift */,
+			);
+			name = BusStops;
+			sourceTree = "<group>";
+		};
+		1A17AFE11EF25F3D00FE83EB /* SavedLocations */ = {
+			isa = PBXGroup;
+			children = (
+				1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */,
+				1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */,
+			);
+			name = SavedLocations;
+			sourceTree = "<group>";
+		};
+		1A17AFE21EF25F5600FE83EB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		1A17AFE31EF25F5E00FE83EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1A17AFE41EF25F6500FE83EB /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */,
+				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		1A17AFE51EF25F7D00FE83EB /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				1A39E1181EBF35F200B2D22C /* ViewController.swift */,
-				1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */,
-				1AE4B10E1ECCA00500B9695C /* SavedMapViewController.swift */,
-				1A19F6661EE53D19000C2A24 /* BusStopsViewController.swift */,
-				1A19F66C1EE54737000C2A24 /* BusStopsTableViewCell.swift */,
-				1A5BF3441EDEF8FE00053F2F /* SideMenuCell.swift */,
-				1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */,
-				1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */,
-				1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */,
-				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
-				1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */,
+				1A17AFE11EF25F3D00FE83EB /* SavedLocations */,
+				1A17AFE01EF25F0E00FE83EB /* BusStops */,
+				1A17AFDF1EF25EFF00FE83EB /* SavedLocationMap */,
+				1A17AFDE1EF25EF300FE83EB /* SideMenu */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		1A17AFE61EF25F8B00FE83EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1A17AFE71EF25F9300FE83EB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		1A17AFE81EF25FA500FE83EB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		1A17AFE91EF25FAC00FE83EB /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		1A1C982A1EC6E238001459D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A17AFE51EF25F7D00FE83EB /* Main */,
+				1A17AFE41EF25F6500FE83EB /* UserProfile */,
+				1A17AFE31EF25F5E00FE83EB /* Login */,
+				1A17AFE21EF25F5600FE83EB /* SignUp */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -129,11 +226,10 @@
 		1A1C982B1EC6E26B001459D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */,
-				1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */,
-				1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */,
-				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
-				1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */,
+				1A17AFE91EF25FAC00FE83EB /* UserProfile */,
+				1A17AFE81EF25FA500FE83EB /* Main */,
+				1A17AFE71EF25F9300FE83EB /* SignUp */,
+				1A17AFE61EF25F8B00FE83EB /* Login */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -247,7 +343,7 @@
 				TargetAttributes = {
 					1A39E1121EBF35F200B2D22C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 34GNZSDHKK;
+						DevelopmentTeam = E93436VDRS;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -491,11 +587,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 34GNZSDHKK;
+				DEVELOPMENT_TEAM = E93436VDRS;
 				INFOPLIST_FILE = GMaps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNepal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GMaps/GMaps-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -509,11 +605,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 34GNZSDHKK;
+				DEVELOPMENT_TEAM = E93436VDRS;
 				INFOPLIST_FILE = GMaps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNepal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GMapsNp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GMaps/GMaps-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

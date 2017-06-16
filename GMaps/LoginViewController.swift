@@ -27,8 +27,14 @@ class LoginViewController: UIViewController {
         self.signUpBtn.layer.cornerRadius = 20.0
         self.signUpBtn.layer.borderColor = UIColor.gray.cgColor
         self.signUpBtn.layer.borderWidth = 1.0
+        let tap:UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
+        view.addGestureRecognizer(tap)
         
         // Do any additional setup after loading the view.
+    }
+    
+    func dissmissKeyboard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

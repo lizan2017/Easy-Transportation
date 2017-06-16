@@ -43,8 +43,14 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
         uploadImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(uploadUserImage)))
         uploadImageView.isUserInteractionEnabled = true
        
+        let tap:UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
+        view.addGestureRecognizer(tap)
+        
     }
     
+    func dissmissKeyboard(){
+        view.endEditing(true)
+    }
     
     
     func uploadUserImage(){

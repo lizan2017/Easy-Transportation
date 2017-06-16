@@ -25,7 +25,7 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
     var currentLocation:CLLocation?
     var googleMaps : GMSMapView!
     var locationManager :CLLocationManager!
-    var latArray:Array<String>= []
+    var latArray:Array<String> = []
     var lonArray:Array<String> = []
     var nameArray:Array<String> = []
 
