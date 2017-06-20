@@ -77,21 +77,26 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return userDic.count
+        return (userDic.count - 1)
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as! UserProfileCell
-        let userProfileDic = userDic as! NSDictionary
-        let keysDic = userProfileDic.allKeys as! Array<String>
-        let valuesDic = userProfileDic.allValues as! Array<String>
+        
+        let userProfileDic = userDic as NSDictionary
+        var keysDic = userProfileDic.allKeys as! Array<String>
+        var valuesDic = userProfileDic.allValues as! Array<String>
+        if keysDic[indexPath.row] == "ImageUrl"{
+            keysDic.remove(at: 0)
+            valuesDic.remove(at: 0)
+        }
         cell.keyLabel.text = keysDic[indexPath.row]
         cell.userDataLabel.text = valuesDic[indexPath.row]
-        return cell
         
         
-       
+        
+       return cell
     }
     
    

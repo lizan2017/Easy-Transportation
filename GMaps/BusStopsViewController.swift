@@ -168,8 +168,8 @@ class BusStopsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "busStopcell") as! BusStopsTableViewCell
         let busStopDic = fetchedArray[indexPath.row]
-        cell.busStopCellView.layer.cornerRadius = 50.5
-        cell.contentView.backgroundColor = UIColor.black
+        cell.busStopCellView.layer.cornerRadius = 10.0
+        cell.contentView.backgroundColor = UIColor.lightGray
         cell.busStopNameLabel.text = busStopDic["name"]! as? String
         cell.busStopLatLabel.text = String(describing: busStopDic["latitude"]!)
         cell.busStopLonLabel.text = String(describing: busStopDic["longitude"]!)

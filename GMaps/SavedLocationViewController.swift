@@ -43,7 +43,7 @@ class SavedLocationViewController: UIViewController , UITableViewDataSource, UIT
         longitudeArray = []
         nameArray = []
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Toggle", style: .done, target: self, action: #selector(toggleSideMenu))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "h6"), style: .plain, target: self, action: #selector(toggleSideMenu))
         
         self.fetchData()
         

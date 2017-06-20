@@ -25,6 +25,7 @@ class SavedMapViewController: UIViewController, CLLocationManagerDelegate, GMSMa
         UIApplication.shared.statusBarStyle = .lightContent
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()

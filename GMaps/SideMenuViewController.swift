@@ -19,11 +19,18 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     var locationManager :CLLocationManager!
     var currentLocation:CLLocation?
     
+    @IBOutlet weak var weatherImageView: UIImageView!
     @IBOutlet weak var savedLocTableview: UITableView!
     @IBOutlet weak var userNameLabel: UILabel!
     
+    @IBOutlet weak var weatherRefreshBtn: UIImageView!
     @IBOutlet weak var userImageview: UIImageView!
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var cityWeatherLabel: UILabel!
+    @IBOutlet weak var countryWeatherLabel: UILabel!
+    @IBOutlet weak var statusWeatherLabel: UILabel!
+    @IBOutlet weak var degreesWeatherLabel: UILabel!
     
     
     
@@ -36,7 +43,12 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         locationManager.startMonitoringSignificantLocationChanges()
         userImageview.layer.cornerRadius = 20
         userNameLabel.textColor = UIColor.white
-        
+        weatherRefreshBtn.isUserInteractionEnabled = true
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(getWeatherData))
+        weatherRefreshBtn.addGestureRecognizer(tapGesture)
+        weatherRefreshBtn.isUserInteractionEnabled = true
+        indicator.hidesWhenStopped = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,12 +69,40 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func getWeatherData() {
-        let url = "api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1ba68cb538a3781224d196cb3d0aa9ea"
-        Alamofire.request(url).responseJSON(completionHandler: {(response) in
+        indicator.startAnimating()
+        let url = "http://api.openweathermap.org/data/2.5/weather?lat=\(String(describing: (currentLocation?.coordinate.latitude)!))&lon=\(String(describing: (currentLocation?.coordinate.longitude)!))&units=metric&APPID=1ba68cb538a3781224d196cb3d0aa9ea"
         
-          
+       Alamofire.request(url).responseJSON(completionHandler: {(response) in
+            
+            let weatherData = response.value as! [String:Any]
+            let sysInfo = weatherData["sys"] as! [String:Any]
+            let weatherCountry = sysInfo["country"] as! String
+            let mainVar = weatherData["main"] as! [String:Any]
+            let currentTemp = mainVar["temp"]
+            let cityName = weatherData["name"] as! String
+            let weatherInfoArray = weatherData["weather"] as! Array<[String:Any]>
+            let weatherInfo = weatherInfoArray[0]
+            let weatherStatus = weatherInfo["main"] as! String
+            self.indicator.stopAnimating()
         
-        })
+            self.cityWeatherLabel.text = cityName
+            self.countryWeatherLabel.text = weatherCountry
+            self.degreesWeatherLabel.text = "\(String(describing: currentTemp!)) °C"
+            self.statusWeatherLabel.text = weatherStatus
+            if weatherStatus == "Rain"{
+                self.weatherImageView.image = UIImage(named: "rain")
+                }else if weatherStatus == "Clouds"{
+                self.weatherImageView.image = UIImage(named: "cloudy")
+            }else if weatherStatus == "Clear"{
+                self.weatherImageView.image = UIImage(named: "sunny")
+            }else if weatherStatus == "Haze"{
+                self.weatherImageView.image = UIImage(named: "haze")
+            }else{
+                return
+        }
+       }
+        )
+    
     }
     
     
