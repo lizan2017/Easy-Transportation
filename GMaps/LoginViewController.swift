@@ -17,9 +17,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     
     @IBOutlet weak var signUpBtn: UIButton!
+    var email:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        emailTextField.text = email
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSForegroundColorAttributeName : UIColor.white])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName : UIColor.white])
         self.loginBtn.layer.cornerRadius = 20.0

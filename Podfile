@@ -15,4 +15,5 @@ target 'GMaps' do
   pod 'Firebase/Storage'
   pod 'SDWebImage'
   pod 'ObjectMapper'
+  pod 'MBProgressHUD'
 end
