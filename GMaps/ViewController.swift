@@ -51,7 +51,6 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.revealViewController().rearViewRevealWidth = 250.0
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            self.view.isUserInteractionEnabled = true
         }
         
        
@@ -256,10 +255,21 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
         self.googleMaps.camera = camera
         let marker = GMSMarker()
         marker.position = coordinate
-        marker.title = String(coordinate.latitude)
-        marker.snippet = String(coordinate.longitude)
-        marker.appearAnimation = GMSMarkerAnimation.pop
-        marker.map = self.googleMaps
+        let geocode = CLGeocoder()
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        geocode.reverseGeocodeLocation(location, completionHandler: {(placeMarks, error) in
+            let place = placeMarks![0]
+            let placeName = place.name!
+           
+            marker.title = placeName
+            if place.locality != nil{
+                marker.snippet =  place.locality!}else{
+                
+            }
+            marker.appearAnimation = GMSMarkerAnimation.pop
+            marker.map = self.googleMaps
+        })
+        
         
     }
     

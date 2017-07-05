@@ -12,7 +12,7 @@ import SDWebImage
 
 class UserProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    let picker = UIImagePickerController()
     @IBOutlet weak var userProfileImageView: UIImageView!
 
     @IBOutlet weak var hamburgerMenu: UIBarButtonItem!
@@ -25,6 +25,7 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
@@ -32,11 +33,12 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
         self.userProfileImageView.layer.borderColor = UIColor.white.cgColor
         self.userProfileImageView.layer.borderWidth = 1.0
-            self.userProfileImageView.layer.cornerRadius = 65.0
+        self.userProfileImageView.layer.cornerRadius = 65.0
         
         if revealViewController() != nil{
             hamburgerMenu.target = self.revealViewController()
             hamburgerMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
         userProfileTableView.delegate = self
@@ -98,9 +100,31 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         
        return cell
     }
+}
+
+extension UserProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
     
-   
-    
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        var selectedImageFromPicker:UIImage?
+        
+        
+        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage{
+            selectedImageFromPicker = editedImage
+        }else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage{
+            
+            selectedImageFromPicker = originalImage
+        }
+        
+        if let selectedImage = selectedImageFromPicker{
+            
+            userProfileImageView.image = selectedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
 
 }

@@ -151,18 +151,18 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         cell.isHighlighted = false
         cell.isSelected = false
         if cell.menuItemLabel.text == "Bus Stops"{
-            let sb = self.storyboard
-            let stopLocationVC = sb?.instantiateViewController(withIdentifier: "bsvc")
-            let nav = UINavigationController(rootViewController: stopLocationVC!)
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let stopLocationVC = sb.instantiateViewController(withIdentifier: "bsvc")
+            let nav = UINavigationController(rootViewController: stopLocationVC)
             self.revealViewController().pushFrontViewController(nav, animated: true)
 
             
         }
         
         if cell.menuItemLabel.text == "Saved Location"{
-        let sb = self.storyboard
-        let savedLocationVC = sb?.instantiateViewController(withIdentifier: "slvc")
-        let nav = UINavigationController(rootViewController: savedLocationVC!)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let savedLocationVC = sb.instantiateViewController(withIdentifier: "slvc")
+        let nav = UINavigationController(rootViewController: savedLocationVC)
         self.revealViewController().pushFrontViewController(nav, animated: true)
         }
         if cell.menuItemLabel.text == "Profile"{
@@ -173,9 +173,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         }
         if cell.menuItemLabel.text == "Map View"{
             self.revealViewController().bounceBackOnLeftOverdraw = true
-            let sb = self.storyboard
-            let mapView = sb?.instantiateViewController(withIdentifier: "mapVC")
-            let nav = UINavigationController.init(rootViewController: mapView!)
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let mapView = sb.instantiateViewController(withIdentifier: "mapVC")
+            let nav = UINavigationController.init(rootViewController: mapView)
             self.revealViewController().pushFrontViewController(nav, animated: true)
 
         

@@ -27,6 +27,8 @@
 		1A1C98251EC6D04E001459D7 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */; };
 		1A1C98271EC6D28D001459D7 /* SavedLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */; };
 		1A1C98291EC6DA0E001459D7 /* SavedLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */; };
+		1A2176731F0C981100017491 /* profileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2176721F0C981000017491 /* profileController.swift */; };
+		1A2176751F0C9BAD00017491 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2176741F0C9BAD00017491 /* User.swift */; };
 		1A29B2FF1EC19C42008791FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A29B2FE1EC19C42008791FD /* Assets.xcassets */; };
 		1A39E1171EBF35F200B2D22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1161EBF35F200B2D22C /* AppDelegate.swift */; };
 		1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1181EBF35F200B2D22C /* ViewController.swift */; };
@@ -67,6 +69,8 @@
 		1A1C98241EC6D04E001459D7 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		1A1C98261EC6D28D001459D7 /* SavedLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationViewController.swift; sourceTree = "<group>"; };
 		1A1C98281EC6DA0E001459D7 /* SavedLocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationCell.swift; sourceTree = "<group>"; };
+		1A2176721F0C981000017491 /* profileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileController.swift; sourceTree = "<group>"; };
+		1A2176741F0C9BAD00017491 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A29B2FE1EC19C42008791FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A39E1131EBF35F200B2D22C /* GMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A39E1161EBF35F200B2D22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 			children = (
 				1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */,
 				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
+				1A2176721F0C981000017491 /* profileController.swift */,
+				1A2176741F0C9BAD00017491 /* User.swift */,
 			);
 			name = UserProfile;
 			sourceTree = "<group>";
@@ -343,7 +349,7 @@
 				TargetAttributes = {
 					1A39E1121EBF35F200B2D22C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = E93436VDRS;
+						DevelopmentTeam = 974PYRN6CZ;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -446,6 +452,7 @@
 				1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */,
 				1A1C98251EC6D04E001459D7 /* SideMenuViewController.swift in Sources */,
 				1A39E1171EBF35F200B2D22C /* AppDelegate.swift in Sources */,
+				1A2176731F0C981100017491 /* profileController.swift in Sources */,
 				1A19F66B1EE5428B000C2A24 /* BusStops+CoreDataProperties.swift in Sources */,
 				1A180D381EC1B24100F90465 /* Latitude+CoreDataClass.swift in Sources */,
 				1A1C98291EC6DA0E001459D7 /* SavedLocationCell.swift in Sources */,
@@ -456,6 +463,7 @@
 				1A5BF3451EDEF8FE00053F2F /* SideMenuCell.swift in Sources */,
 				1A19F6631EE53958000C2A24 /* BusStops.swift in Sources */,
 				1A199FAD1EE80A8400CE0B70 /* UserProfileViewController.swift in Sources */,
+				1A2176751F0C9BAD00017491 /* User.swift in Sources */,
 				1A19F66A1EE5428B000C2A24 /* BusStops+CoreDataClass.swift in Sources */,
 				1A1A5DC31EEC21A400592FB0 /* UserProfileCell.swift in Sources */,
 				1A1A5DC11EEC1B0500592FB0 /* LoginData+CoreDataProperties.swift in Sources */,
@@ -587,7 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = E93436VDRS;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
 				INFOPLIST_FILE = GMaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -605,7 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = E93436VDRS;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
 				INFOPLIST_FILE = GMaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

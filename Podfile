@@ -14,4 +14,5 @@ target 'GMaps' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'SDWebImage'
+  pod 'ObjectMapper'
 end

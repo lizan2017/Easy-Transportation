@@ -16,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let urlString = url.host!
+        print(url.path)
+        if urlString == "lizan"{
+            let sb = UIStoryboard(name: "UserProfile", bundle: nil)
+            let userProfileVc = sb.instantiateViewController(withIdentifier: "main")
+            
+            window?.rootViewController = userProfileVc
+        }
+        return true
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
