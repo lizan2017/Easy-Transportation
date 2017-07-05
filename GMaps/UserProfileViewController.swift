@@ -57,6 +57,7 @@ class UserProfileViewController: UIViewController{
     
     
     func fetchUserData(){
+        self.showProgressHud()
         let ref = FIRDatabase.database().reference()
         ref.child("Users").child((FIRAuth.auth()?.currentUser?.uid)!).observe(.value, with: {
             (snapshot) in
@@ -70,6 +71,7 @@ class UserProfileViewController: UIViewController{
             self.userDataArray.append(self.currentUser!.email!)
             self.userDataArray.append(self.currentUser!.fullName!)
             self.userProfileTableView.reloadData()
+            self.dismissProgressHud()
         })
 
     }
@@ -107,10 +109,12 @@ extension UserProfileViewController: UITableViewDelegate{
         var alert = UIAlertController(title: "Edit", message: "Edit your \(cell.keyLabel.text!) below", preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Save", style:.default, handler: {
             _ in
+            self.showProgressHud()
             let emailTextField = alert.textFields![0] as UITextField
             ProfileController().updateUserEmail(userEmail: emailTextField.text!, UID: self.currentUser!.id!, completion: {
                 (result) in
                 if result == true{
+                    self.dismissProgressHud()
                     alert = UIAlertController(title: "Sign Out", message: "Signing Out!!", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: {
                         _ in
@@ -143,10 +147,12 @@ extension UserProfileViewController: UITableViewDelegate{
             var alert = UIAlertController(title: "Edit", message: "Edit your \(cell.keyLabel.text!) below", preferredStyle: .alert)
             let saveAction = UIAlertAction(title: "Save", style:.default, handler: {
                 _ in
+                self.showProgressHud()
                 let fullNameTextField = alert.textFields![0] as UITextField
                 ProfileController().updateUserName(userName: fullNameTextField.text!, UID: self.currentUser!.id!, completion: {
                     (result) in
                     if result == true{
+                        self.dismissProgressHud()
                         alert = UIAlertController(title: "Sucess", message: "Name Updated sucessfully!!", preferredStyle: .alert)
                         let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                         alert.addAction(okAction)
@@ -155,6 +161,14 @@ extension UserProfileViewController: UITableViewDelegate{
                     
                 })
             })
+            alert.addTextField(configurationHandler: {
+                (textfield:UITextField) in
+                textfield.placeholder = "Update your name"
+            })
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(saveAction)
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true, completion: nil)
         }
         
     }
@@ -178,9 +192,11 @@ extension UserProfileViewController: UIImagePickerControllerDelegate, UINavigati
         
         if let selectedImage = selectedImageFromPicker{
             let imageData = UIImagePNGRepresentation(selectedImage)
+            self.showProgressHud()
             ProfileController().updateProfileImage(userName: currentUser!.fullName!, image: imageData!, UID: currentUser!.id! , completion: {
                 (result) in
                 if result == true{
+                    self.dismissProgressHud()
                     let alert = UIAlertController(title: "Sucess", message: "Image updated sucessfully!", preferredStyle: .alert)
                     let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: {
                         _ in

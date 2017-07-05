@@ -30,6 +30,7 @@
 		1A2176731F0C981100017491 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2176721F0C981000017491 /* ProfileController.swift */; };
 		1A2176751F0C9BAD00017491 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2176741F0C9BAD00017491 /* User.swift */; };
 		1A2176781F0CAFAB00017491 /* router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2176771F0CAFAB00017491 /* router.swift */; };
+		1A21767B1F0CBFCD00017491 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21767A1F0CBFCD00017491 /* UIViewControllerExtension.swift */; };
 		1A29B2FF1EC19C42008791FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A29B2FE1EC19C42008791FD /* Assets.xcassets */; };
 		1A39E1171EBF35F200B2D22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1161EBF35F200B2D22C /* AppDelegate.swift */; };
 		1A39E1191EBF35F200B2D22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E1181EBF35F200B2D22C /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 		1A2176721F0C981000017491 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		1A2176741F0C9BAD00017491 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A2176771F0CAFAB00017491 /* router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = router.swift; sourceTree = "<group>"; };
+		1A21767A1F0CBFCD00017491 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		1A29B2FE1EC19C42008791FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A39E1131EBF35F200B2D22C /* GMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A39E1161EBF35F200B2D22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 		1A1C982A1EC6E238001459D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A2176791F0CBFAA00017491 /* Extensions */,
 				1A17AFE51EF25F7D00FE83EB /* Main */,
 				1A17AFE41EF25F6500FE83EB /* UserProfile */,
 				1A17AFE31EF25F5E00FE83EB /* Login */,
@@ -259,6 +262,14 @@
 				1A180D351EC1B24100F90465 /* Latitude+CoreDataProperties.swift */,
 			);
 			name = Modals;
+			sourceTree = "<group>";
+		};
+		1A2176791F0CBFAA00017491 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A21767A1F0CBFCD00017491 /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		1A39E10A1EBF35F200B2D22C = {
@@ -448,6 +459,7 @@
 			files = (
 				1AF819EB1EEAF725001FDA7C /* SignUpViewController.swift in Sources */,
 				1A39E11F1EBF35F200B2D22C /* GMaps.xcdatamodeld in Sources */,
+				1A21767B1F0CBFCD00017491 /* UIViewControllerExtension.swift in Sources */,
 				1AE4B10F1ECCA00500B9695C /* SavedMapViewController.swift in Sources */,
 				1AF819EF1EEB1C61001FDA7C /* LoginViewController.swift in Sources */,
 				1A180D391EC1B24100F90465 /* Latitude+CoreDataProperties.swift in Sources */,
