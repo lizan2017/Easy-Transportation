@@ -77,6 +77,7 @@ class LoginViewController: UIViewController {
     
     func login(){
         if emailTextField.text! != "" && passwordTextField.text! != ""{
+            self.showProgressHud()
             FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {
                 (currentUser, error) in
                 
@@ -86,12 +87,13 @@ class LoginViewController: UIViewController {
                     let emailEntity = LoginData(context: context)
                     emailEntity.email = self.emailTextField.text
                     try? context.save()
-                    
+                    self.dismissProgressHud()
                     let sb = UIStoryboard(name: "Main", bundle: nil)
                     
                     let mainVC = sb.instantiateViewController(withIdentifier: "main")
                     self.present(mainVC, animated: true, completion: nil)
                 }else{
+                    self.dismissProgressHud()
                     if let myError = error?.localizedDescription{
                         let alert = UIAlertController(title: "Error", message: myError, preferredStyle: .alert)
                         let alertaction = UIAlertAction(title: "OK", style: .cancel, handler: nil)

@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,22 +62,11 @@
                     <navigationItem key="navigationItem" id="Jh6-qF-8rS">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="h6" id="ivc-w6-jmQ"/>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="search" id="xTv-zG-mzK">
-                                <connections>
-                                    <action selector="googleSearchAdress:" destination="BYZ-38-t0r" id="LqI-zz-2WG"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="B7X-9A-sCM">
-                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Qgk-Ks-J3I">
-                                    <rect key="frame" x="273" y="6" width="51" height="31"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <connections>
-                                        <action selector="saveSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="WV9-6z-4gD"/>
-                                    </connections>
-                                </switch>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="xTv-zG-mzK">
+                            <connections>
+                                <action selector="googleSearchAdress:" destination="BYZ-38-t0r" id="LqI-zz-2WG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="defalutBtn" destination="DEa-dZ-Yqa" id="TrB-Rk-ZXO"/>
@@ -86,7 +74,6 @@
                         <outlet property="menuBtn" destination="ivc-w6-jmQ" id="p5a-sO-Z44"/>
                         <outlet property="menuButton" destination="ivc-w6-jmQ" id="OwA-9c-r9M"/>
                         <outlet property="satelliteBtn" destination="Wku-Zl-wUA" id="uhe-x4-k3N"/>
-                        <outlet property="saveSwitchON" destination="Qgk-Ks-J3I" id="dLX-qT-R22"/>
                         <outlet property="searchBtn" destination="xTv-zG-mzK" id="Mil-3L-v6i"/>
                     </connections>
                 </viewController>
@@ -169,7 +156,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i66-kr-IL7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="60"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-BT-iii">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyProfile" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-BT-iii">
                                         <rect key="frame" x="20" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="cd4-2K-DE3"/>
@@ -607,11 +594,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dummyProfile" width="100" height="100"/>
         <image name="h6" width="64" height="64"/>
         <image name="r" width="64" height="64"/>
         <image name="refresh" width="16" height="16"/>
         <image name="s" width="64" height="64"/>
-        <image name="user" width="28" height="29"/>
         <image name="weather" width="720" height="298"/>
     </resources>
 </document>

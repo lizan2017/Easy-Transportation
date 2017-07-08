@@ -181,19 +181,28 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         }
         if cell.menuItemLabel.text == "Log Out"{
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context = appDelegate.persistentContainer.viewContext
-            let fetchedData = try! context.fetch(LoginData.fetchRequest())
-            for i:Int in 0 ..< fetchedData.count{
-            let emailData = fetchedData[i] as! LoginData
-            context.delete(emailData)
-                
-            try? context.save()
-                
-                let sb = UIStoryboard(name: "Login", bundle: nil)
-                let loginVC = sb.instantiateViewController(withIdentifier: "loginVC")
-                self.present(loginVC, animated: true, completion: nil)
-          }
+            let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to logout?", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: {
+                _ in
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appDelegate.persistentContainer.viewContext
+                let fetchedData = try! context.fetch(LoginData.fetchRequest())
+                for i:Int in 0 ..< fetchedData.count{
+                    let emailData = fetchedData[i] as! LoginData
+                    context.delete(emailData)
+                    
+                    try? context.save()
+                    
+                    let sb = UIStoryboard(name: "Login", bundle: nil)
+                    let loginVC = sb.instantiateViewController(withIdentifier: "loginVC")
+                    self.present(loginVC, animated: true, completion: nil)
+                }
+            })
+            let cancelAlert = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(alertAction)
+            alert.addAction(cancelAlert)
+            self.present(alert, animated: true, completion: nil)
+            
         }
         
     }

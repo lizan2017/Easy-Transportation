@@ -31,7 +31,7 @@ class ViewController: UIViewController , UISearchBarDelegate, CLLocationManagerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "GMaps"
+        self.title = "Map View"
         self.googleMaps = GMSMapView()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         

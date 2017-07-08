@@ -144,6 +144,7 @@ class BusStopsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func fetchBusStopData(){
+        self.showProgressHud()
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appdelegate.persistentContainer.viewContext
         do{
@@ -157,6 +158,7 @@ class BusStopsViewController: UIViewController, UITableViewDelegate, UITableView
                 self.fetchedArray.append(self.fetchedDictionary)
                 
             }
+            self.dismissProgressHud()
             busStopsTableView.reloadData()
         }
     }

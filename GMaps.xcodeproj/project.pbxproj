@@ -155,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				1AF819EA1EEAF725001FDA7C /* SignUpViewController.swift */,
+				1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -163,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				1AF819EE1EEB1C61001FDA7C /* LoginViewController.swift */,
+				1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1A5DC21EEC21A400592FB0 /* UserProfileCell.swift */,
+				1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */,
 				1A199FAC1EE80A8400CE0B70 /* UserProfileViewController.swift */,
 				1A2176721F0C981000017491 /* ProfileController.swift */,
 				1A2176741F0C9BAD00017491 /* User.swift */,
@@ -182,6 +185,7 @@
 		1A17AFE51EF25F7D00FE83EB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
 				1A39E1181EBF35F200B2D22C /* ViewController.swift */,
 				1A17AFE11EF25F3D00FE83EB /* SavedLocations */,
 				1A17AFE01EF25F0E00FE83EB /* BusStops */,
@@ -189,38 +193,6 @@
 				1A17AFDE1EF25EF300FE83EB /* SideMenu */,
 			);
 			name = Main;
-			sourceTree = "<group>";
-		};
-		1A17AFE61EF25F8B00FE83EB /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				1A1BF8BD1EE7165B007BE2E6 /* Login.storyboard */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		1A17AFE71EF25F9300FE83EB /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				1A1BF8BF1EE7166B007BE2E6 /* SignUp.storyboard */,
-			);
-			name = SignUp;
-			sourceTree = "<group>";
-		};
-		1A17AFE81EF25FA500FE83EB /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				1A39E11A1EBF35F200B2D22C /* Main.storyboard */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		1A17AFE91EF25FAC00FE83EB /* UserProfile */ = {
-			isa = PBXGroup;
-			children = (
-				1A199FAA1EE809A600CE0B70 /* UserProfile.storyboard */,
-			);
-			name = UserProfile;
 			sourceTree = "<group>";
 		};
 		1A1C982A1EC6E238001459D7 /* Controllers */ = {
@@ -233,17 +205,6 @@
 				1A17AFE21EF25F5600FE83EB /* SignUp */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		1A1C982B1EC6E26B001459D7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1A17AFE91EF25FAC00FE83EB /* UserProfile */,
-				1A17AFE81EF25FA500FE83EB /* Main */,
-				1A17AFE71EF25F9300FE83EB /* SignUp */,
-				1A17AFE61EF25F8B00FE83EB /* Login */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		1A1C982C1EC6E289001459D7 /* Modals */ = {
@@ -295,7 +256,6 @@
 			children = (
 				1A1C982A1EC6E238001459D7 /* Controllers */,
 				1A1C982C1EC6E289001459D7 /* Modals */,
-				1A1C982B1EC6E26B001459D7 /* View */,
 				1A1636321EC62B5F0053F08A /* SWReavel */,
 				1A39E1161EBF35F200B2D22C /* AppDelegate.swift */,
 				1A29B2FE1EC19C42008791FD /* Assets.xcassets */,

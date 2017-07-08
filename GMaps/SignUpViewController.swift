@@ -101,6 +101,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
     
     func createUser(){
         if emailTextField.text != "" && passwordTextField.text != ""{
+            self.showProgressHud()
         FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {
             (user, error) in
             
@@ -120,7 +121,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
                     self.databaseRef.child("Users").child((FIRAuth.auth()?.currentUser?.uid)!).child("Email").setValue(self.emailTextField.text)
                         
                     self.databaseRef.child("Users").child((FIRAuth.auth()?.currentUser?.uid)!).child("ImageUrl").setValue(String(describing: (metadata?.downloadURL())!))
-                        
+                        self.dismissProgressHud()
                     let sb = UIStoryboard(name: "Login", bundle: nil)
                         let loginVC = sb.instantiateViewController(withIdentifier: "loginVC")
                         self.present(loginVC, animated: true, completion: nil)
@@ -128,7 +129,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
                 
                 }
                 }else{
-                    
+                    self.dismissProgressHud()
                     let alert = UIAlertController(title: "Error", message: "Please Upload your profile image!!", preferredStyle: .alert)
                     let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                     alert.addAction(action)
@@ -136,7 +137,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
                     
                 }
             }else{
-                
+                self.dismissProgressHud()
                 let alert = UIAlertController(title: "Error", message: "Error Creating User!!", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                 alert.addAction(action)
@@ -144,6 +145,7 @@ class SignUpViewController: UIViewController , UIImagePickerControllerDelegate, 
             }
         })
         }else{
+            self.dismissProgressHud()
             let alert = UIAlertController(title: "Error", message: "Please enter valid email or password!!", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             alert.addAction(action)
