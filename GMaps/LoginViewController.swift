@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import IQKeyboardManagerSwift
+
 class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
 

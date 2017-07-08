@@ -11,6 +11,8 @@ import CoreData
 import GoogleMaps
 import GooglePlaces
 import Firebase
+import IQKeyboardManagerSwift
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -37,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyCxPL3sLGcSrreEbETzkUXrMT3Cq0ywejA")
         FIRApp.configure()
         checkSession()
+        IQKeyboardManager.sharedManager().enable = true
         return true
     }
     

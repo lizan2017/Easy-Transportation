@@ -47,6 +47,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - IQKeyboardManagerSwift (4.0.9)
   - MBProgressHUD (1.0.0)
   - ObjectMapper (2.2.6)
   - SDWebImage (4.0.0):
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - GoogleMaps
   - GooglePlaces
+  - IQKeyboardManagerSwift
   - MBProgressHUD
   - ObjectMapper
   - SDWebImage
@@ -78,10 +80,11 @@ SPEC CHECKSUMS:
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 3efb7c5fa92c849d02653890ef879644eab9c8fe
+PODFILE CHECKSUM: 647c61f2213f9054f81b3a074c9930786060d543
 
 COCOAPODS: 1.2.1

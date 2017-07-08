@@ -16,4 +16,5 @@ target 'GMaps' do
   pod 'SDWebImage'
   pod 'ObjectMapper'
   pod 'MBProgressHUD'
+  pod 'IQKeyboardManagerSwift'
 end
